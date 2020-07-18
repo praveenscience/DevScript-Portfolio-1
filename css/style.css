@@ -1,0 +1,83 @@
+*, body, input, select {
+	font-family: "Open Sans";
+}
+img {
+	max-width: 100%;
+}
+
+.intro-bg {
+	background: url("https://i.imgur.com/z6Zb3Al.png") no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 300px;
+	color: #fff;
+	position: relative;
+}
+.intro-bg .content {
+	position: absolute;
+	z-index: 5;
+	text-shadow: 0 0 2px #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.intro-bg::before {
+	position: absolute;
+	content: "";
+	background-color: rgba(0, 0, 0, 0.5);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 0;
+}
+
+.intro-bg .socials a {
+	color: #fff;
+	font-size: 2.5em;
+	padding: 10px;
+	transition: all 0.5s linear;
+}
+.intro-bg .socials a:hover {
+	color: #f90;
+}
+
+.intro-about-pic {
+	text-align: center;
+	padding: 25px;
+}
+.intro-about-pic figure {}
+.intro-about-pic figure img {
+	display: block;
+	width: 200px;
+	margin: 15px auto;
+	border-radius: 100%;
+	box-shadow: 0 0 15px #000;
+}
+.intro-about-pic figure figcaption {
+	font-size: 1.5em;
+	font-weight: 300;
+	font-family: 'Montserrat';
+}
+
+.intro-about-text {
+	padding: 25px;
+}
+.intro-about-text h2 {
+	font-family: 'Montserrat';
+	font-weight: 300;
+	text-shadow: 0 0 1px #666;
+}
+.intro-about-text p {
+	line-height: 2;
+}
+
+@media screen and (max-width: 575px) {
+	.intro-about-pic figure img {
+		margin-bottom: 0;
+	}
+	.intro-about-pic figure figcaption {
+		display: none;
+	}
+}
